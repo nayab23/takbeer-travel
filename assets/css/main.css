@@ -1417,8 +1417,9 @@ textarea {
   visibility: visible;
   transform: scale(1);
 }
-.tgmenu__navbar-wrap > ul > li.active a, .tgmenu__navbar-wrap > ul > li:hover a {
-  color: var(--tg-theme-primary);
+.tgmenu__navbar-wrap > ul > li.active a, .tgmenu__navbar-wrap > ul > li:hover a,
+.menu-black .tgmenu__navbar-wrap > ul > li.active a, .menu-black .tgmenu__navbar-wrap > ul > li:hover a {
+  color: var(--tg-theme-primary) !important;
 }
 .tgmenu__main-menu li.menu-item-has-children .dropdown-btn {
   display: none;
@@ -1985,7 +1986,8 @@ textarea {
 .mobile-menu-visible .tgmobile__menu .close-btn {
   transform: rotate(360deg);
 }
-.sticky-menu .tgmenu__navbar-wrap > ul > li a, .sticky-menu .tgmenu__main-menu li.menu-item-has-children > a::after{
+.sticky-menu .tgmenu__navbar-wrap > ul > li a, .sticky-menu .tgmenu__main-menu li.menu-item-has-children > a::after, 
+.menu-black .tgmenu__navbar-wrap > ul > li a, .menu-black .tgmenu__main-menu li.menu-item-has-children > a::after{
   color: var(--tg-color-black-1);
 }
 /*=============================
@@ -2017,7 +2019,7 @@ textarea {
 height: 100%;
 width: 100%;
 /* min-height: 870px; */
-background-color: rgba(0,0,0, 0.4);
+background-color: rgba(0,0,0, 0.8);
   position: absolute;
   top: 0;
   left: 0;
@@ -2727,7 +2729,7 @@ background-color: rgba(0,0,0, 0.4);
 ===============================*/
 .brand-area {
   padding: 56px 0;
-  border-bottom: 1px solid #E6E7F3;
+  border-top: 1px solid #E6E7F3;
 }
 .brand__area-two {
   padding: 90px 0;
@@ -4080,7 +4082,7 @@ background-color: rgba(0,0,0, 0.4);
   box-shadow: 0px 4px 30px 0px #CFDEE4;
 }
 .services-item:hover .services-content .icon {
-  background: var(--tg-theme-secondary);
+  background: var(--tg-theme-primary);
   color: var(--tg-color-white-default);
 }
 .services__item-two {
@@ -7748,6 +7750,11 @@ background-color: rgba(0,0,0, 0.4);
   border-radius: 50%;
   width: 100%;
   filter: grayscale(1);
+  border-radius: 50%;
+  width: 100%;
+  filter: grayscale(1);
+  height: 65px;
+  object-fit: cover;
 }
 .testimonial-nav .swiper-wrapper .swiper-slide {
   width: auto !important;
