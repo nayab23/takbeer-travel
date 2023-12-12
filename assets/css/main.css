@@ -1403,7 +1403,7 @@ textarea {
   padding: 8px 15px 8px 25px;
   line-height: 1.4;
   display: block;
-  color: var(--tg-heading-color);
+  color: var(--tg-heading-color) !important;
   text-transform: capitalize;
 }
 .tgmenu__navbar-wrap > ul > li .sub-menu > li:hover > a, .tgmenu__navbar-wrap > ul > li .sub-menu > li.active > a {
@@ -1418,7 +1418,7 @@ textarea {
   transform: scale(1);
 }
 .tgmenu__navbar-wrap > ul > li.active a, .tgmenu__navbar-wrap > ul > li:hover a,
-.menu-black .tgmenu__navbar-wrap > ul > li.active a, .menu-black .tgmenu__navbar-wrap > ul > li:hover a {
+.menu-black .tgmenu__navbar-wrap > ul > li.active a {
   color: var(--tg-theme-primary) !important;
 }
 .tgmenu__main-menu li.menu-item-has-children .dropdown-btn {
